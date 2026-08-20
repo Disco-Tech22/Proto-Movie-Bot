@@ -100,8 +100,8 @@ DAILY_CHANNEL_ID = 1538316181470187550
 # UTC is equivalent to GMT for this purpose.
 # Using timezone.utc avoids the ZoneInfo/tzdata problem.
 DAILY_MOVIE_TIME = time(
-    hour=9,
-    minute=0,
+    hour=16,
+    minute=51,
     tzinfo=timezone.utc
 )
 
