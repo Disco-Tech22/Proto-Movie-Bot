@@ -101,7 +101,7 @@ DAILY_CHANNEL_ID = 1538316181470187550
 # Using timezone.utc avoids the ZoneInfo/tzdata problem.
 DAILY_MOVIE_TIME = time(
     hour=16,
-    minute=51,
+    minute=0,
     tzinfo=timezone.utc
 )
 
