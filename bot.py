@@ -1,8 +1,7 @@
 import os
 import random
 import json
-from datetime import time
-from zoneinfo import ZoneInfo
+from datetime import time, timezone
 from threading import Thread
 
 from flask import Flask
@@ -10,97 +9,251 @@ import discord
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 
-# Load environment variables
+
+# ============================================================
+# ENVIRONMENT
+# ============================================================
+
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 if not TOKEN:
-    raise RuntimeError("DISCORD_TOKEN environment variable is missing")
+    raise RuntimeError(
+        "DISCORD_TOKEN is missing. "
+        "Add DISCORD_TOKEN to your Render Environment Variables."
+    )
 
-# Flask web server for Render
+
+# ============================================================
+# FLASK WEB SERVER
+# Required because this is running as a Render Web Service
+# ============================================================
+
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return "Discord bot is running!"
+    return "🎬 The Usher's Movie Bot is online!"
+
+
+@app.route("/health")
+def health():
+    return "OK"
 
 
 def run_web():
     port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+
+    print(f"Starting web server on port {port}")
+
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=False,
+        use_reloader=False
+    )
 
 
-# Discord bot setup
+# ============================================================
+# DISCORD BOT
+# ============================================================
+
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(
+    command_prefix="!",
+    intents=intents
+)
 
-# Load your 1000-movie JSON file
-with open("movies.json", "r", encoding="utf-8") as f:
-    movies = json.load(f)
 
-# Channel where the bot should post daily
+# ============================================================
+# MOVIES
+# ============================================================
+
+try:
+    with open("movies.json", "r", encoding="utf-8") as f:
+        movies = json.load(f)
+except FileNotFoundError:
+    raise RuntimeError(
+        "movies.json was not found. "
+        "Make sure movies.json is committed to your GitHub repository."
+    )
+
+if not movies:
+    raise RuntimeError("movies.json is empty.")
+
+
+# ============================================================
+# SETTINGS
+# ============================================================
+
+# Discord channel where the daily movie will be posted
 DAILY_CHANNEL_ID = 1538316181470187550
 
-# Daily posting time: 9:00 AM GMT
-GMT = ZoneInfo("Etc/GMT")
-DAILY_MOVIE_TIME = time(hour=9, minute=0, tzinfo=GMT)
+# 09:00 GMT every day
+#
+# UTC is equivalent to GMT for this purpose.
+# Using timezone.utc avoids the ZoneInfo/tzdata problem.
+DAILY_MOVIE_TIME = time(
+    hour=9,
+    minute=0,
+    tzinfo=timezone.utc
+)
 
+
+# ============================================================
+# MOVIE EMBED
+# ============================================================
+
+def create_movie_embed():
+    """Create an embed containing a random movie."""
+
+    movie = random.choice(movies)
+
+    embed = discord.Embed(
+        title=f"🎬 Movie of the Day: {movie['title']}",
+        description=movie.get(
+            "description",
+            "No description available."
+        )
+    )
+
+    embed.add_field(
+        name="📅 Year",
+        value=str(movie.get("year", "Unknown")),
+        inline=True
+    )
+
+    embed.add_field(
+        name="🎭 Genre",
+        value=str(movie.get("genre", "Unknown")),
+        inline=True
+    )
+
+    embed.set_footer(
+        text="🍿 The Usher's Movie of the Day"
+    )
+
+    return embed
+
+
+# ============================================================
+# DISCORD EVENTS
+# ============================================================
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
+    print("========================================")
+    print(f"Logged in as: {bot.user}")
+    print(f"Bot ID: {bot.user.id}")
+    print(f"Movies loaded: {len(movies)}")
+    print("========================================")
 
     if not daily_movie.is_running():
         daily_movie.start()
+        print("Daily movie task started.")
 
+
+# ============================================================
+# DAILY MOVIE
+# ============================================================
 
 @tasks.loop(time=DAILY_MOVIE_TIME)
 async def daily_movie():
-    """Sends a random movie every day at 9:00 AM GMT."""
+    """Posts a random movie every day at 09:00 GMT."""
+
+    print("Daily movie task triggered.")
+
     channel = bot.get_channel(DAILY_CHANNEL_ID)
 
     if channel is None:
-        print("Daily channel not found. Check the ID.")
+        print(
+            f"ERROR: Could not find Discord channel "
+            f"{DAILY_CHANNEL_ID}"
+        )
         return
 
-    movie = random.choice(movies)
+    try:
+        embed = create_movie_embed()
 
-    embed = discord.Embed(
-        title=f"🎬 Movie of the Day: {movie['title']}",
-        description=movie["description"]
-    )
+        await channel.send(embed=embed)
 
-    embed.add_field(name="📅 Year", value=str(movie["year"]))
-    embed.add_field(name="🎭 Genre", value=str(movie["genre"]))
-    embed.set_footer(text="🍿 The Usher's Movie of the Day")
+        print("Daily movie successfully posted.")
 
-    await channel.send(embed=embed)
+    except discord.Forbidden:
+        print(
+            "ERROR: Discord rejected the message. "
+            "Make sure the bot has permission to send messages "
+            "and embed links in the channel."
+        )
 
+    except discord.HTTPException as e:
+        print(f"ERROR: Discord API error: {e}")
+
+    except Exception as e:
+        print(f"ERROR sending daily movie: {e}")
+
+
+# ============================================================
+# MANUAL COMMAND
+# ============================================================
 
 @bot.command()
 async def movie(ctx):
-    """Posts a random movie manually."""
-    movie = random.choice(movies)
+    """Posts a random movie manually using !movie."""
 
-    embed = discord.Embed(
-        title=f"🎬 Movie of the Day: {movie['title']}",
-        description=movie["description"]
-    )
+    try:
+        embed = create_movie_embed()
 
-    embed.add_field(name="📅 Year", value=str(movie["year"]))
-    embed.add_field(name="🎭 Genre", value=str(movie["genre"]))
-    embed.set_footer(text="🍿 The Usher's Movie of the Day")
+        await ctx.send(embed=embed)
 
-    await ctx.send(embed=embed)
+    except discord.Forbidden:
+        await ctx.send(
+            "❌ I don't have permission to send messages or embeds here."
+        )
 
+    except Exception as e:
+        print(f"ERROR with !movie command: {e}")
+
+
+# ============================================================
+# ERROR HANDLING
+# ============================================================
+
+@bot.event
+async def on_command_error(ctx, error):
+
+    if isinstance(error, commands.CommandNotFound):
+        return
+
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("❌ You're missing a required argument.")
+
+    else:
+        print(f"Command error: {error}")
+
+
+# ============================================================
+# START
+# ============================================================
 
 if __name__ == "__main__":
-    # Start the web server in the background for Render
-    Thread(target=run_web, daemon=True).start()
 
-    # Start the Discord bot
+    # Start Flask in the background.
+    # Render needs the web server to listen on its assigned PORT.
+    web_thread = Thread(
+        target=run_web,
+        daemon=True
+    )
+
+    web_thread.start()
+
+    print("Flask web server started.")
+
+    # Start Discord bot
+    print("Starting Discord bot...")
+
     bot.run(TOKEN)
