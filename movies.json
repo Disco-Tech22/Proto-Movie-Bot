@@ -1,0 +1,1759 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": "Drama",
+    "description": "Two imprisoned men form a deep bond over the years as they navigate hardship, hope, and the search for redemption within a brutal prison system."
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": "Crime / Drama",
+    "description": "A powerful mafia family faces shifting loyalties and rising threats as its patriarch struggles to secure the future of his criminal empire."
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action / Crime",
+    "description": "Batman confronts a chaotic mastermind whose unpredictable schemes push Gotham City into turmoil and test the limits of justice."
+  },
+  {
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "genre": "Crime / Drama",
+    "description": "The rise of a young mob leader unfolds alongside the past of his father, revealing how legacy and power shape the future of a criminal dynasty."
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "genre": "Drama",
+    "description": "Inside a tense jury room, one man challenges the assumptions of his peers, sparking a heated debate about justice, prejudice, and truth."
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": "Historical / Drama",
+    "description": "A businessman becomes an unlikely savior as he risks everything to protect innocent lives during one of history’s darkest periods."
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genre": "Fantasy / Adventure",
+    "description": "The final battle for Middle‑earth erupts as a perilous quest nears its end, testing courage, loyalty, and the fate of all peoples."
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": "Crime / Drama",
+    "description": "Interwoven stories of crime and redemption collide in a stylized underworld where chance encounters lead to unexpected consequences."
+  },
+  {
+    "title": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "genre": "Western",
+    "description": "Three gunslingers embark on a dangerous hunt for buried gold, forming uneasy alliances as betrayal lurks at every turn."
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": "Drama / Romance",
+    "description": "A kind‑hearted man unwittingly influences major moments in history while pursuing love and meaning in an ever‑changing world."
+  },
+
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "genre": "Drama / Thriller",
+    "description": "A disillusioned man forms an underground club that spirals into chaos as identity, rebellion, and control collide."
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "A specialist in dream infiltration faces a mission that blurs the boundaries between reality and imagination, threatening his grip on both."
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "genre": "Fantasy / Adventure",
+    "description": "A young hobbit begins a dangerous journey to destroy a powerful artifact, joined by companions who must face rising darkness."
+  },
+  {
+    "title": "Star Wars: Episode V – The Empire Strikes Back",
+    "year": 1980,
+    "genre": "Sci‑Fi / Adventure",
+    "description": "The Rebel Alliance suffers devastating setbacks as a young hero confronts a dark truth that reshapes his destiny."
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "genre": "Fantasy / Adventure",
+    "description": "As war spreads across Middle‑earth, divided companions fight battles on multiple fronts while hope hangs by a thread."
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Sci‑Fi / Action",
+    "description": "A hacker discovers a hidden reality and joins a rebellion against its architects, challenging everything he thought he knew."
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "genre": "Crime / Drama",
+    "description": "A young man rises through the ranks of organized crime before his world unravels in a spiral of violence and betrayal."
+  },
+  {
+    "title": "Seven Samurai",
+    "year": 1954,
+    "genre": "Adventure / Drama",
+    "description": "Warriors unite to defend a village from bandits, forging bonds of honor and sacrifice in the face of overwhelming odds."
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "genre": "Crime / Thriller",
+    "description": "Two detectives hunt a meticulous killer whose crimes follow a chilling pattern rooted in moral corruption."
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "genre": "Crime / Drama",
+    "description": "Young residents of a violent Brazilian neighborhood navigate crime, ambition, and survival as their lives intersect."
+  },
+
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genre": "Thriller / Crime",
+    "description": "A young FBI trainee seeks help from a brilliant but dangerous inmate to catch a serial killer who eludes capture."
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "genre": "War / Drama",
+    "description": "A squad of soldiers undertakes a perilous mission behind enemy lines to find a missing paratrooper during World War II."
+  },
+  {
+    "title": "Spirited Away",
+    "year": 2001,
+    "genre": "Fantasy / Animation",
+    "description": "A young girl becomes trapped in a magical world of spirits and must find courage to rescue her parents and return home."
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Sci‑Fi / Drama",
+    "description": "A team of explorers ventures through a wormhole seeking a new home for humanity as Earth faces ecological collapse."
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "genre": "Thriller / Drama",
+    "description": "Two families become entangled in a web of deception and opportunity, exposing deep social divides with devastating consequences."
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "genre": "Drama / Fantasy",
+    "description": "A death‑row guard encounters a gentle inmate with extraordinary abilities, challenging his beliefs about justice and humanity."
+  },
+  {
+    "title": "Léon: The Professional",
+    "year": 1994,
+    "genre": "Action / Drama",
+    "description": "A solitary hitman forms an unexpected bond with a young girl, leading them both into danger and emotional awakening."
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "genre": "Crime / Mystery",
+    "description": "A group of criminals becomes entangled in a complex plot orchestrated by a mysterious mastermind whose identity remains elusive."
+  },
+  {
+    "title": "Harakiri",
+    "year": 1962,
+    "genre": "Drama / Samurai",
+    "description": "A ronin seeks justice in a rigid feudal system, revealing hidden truths that challenge the honor of a powerful clan."
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": "Animation / Adventure",
+    "description": "A young lion prince must confront loss, responsibility, and destiny to reclaim his rightful place in the circle of life."
+  },
+
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "genre": "Sci‑Fi / Adventure",
+    "description": "A teenager accidentally travels through time and must ensure his parents fall in love to preserve his own existence."
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "genre": "Historical / Drama",
+    "description": "A Jewish musician struggles to survive the devastation of World War II while clinging to hope and identity."
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "genre": "Sci‑Fi / Action",
+    "description": "A reprogrammed cyborg protects a young boy who holds the key to humanity’s future as a deadly new threat emerges."
+  },
+  {
+    "title": "American History X",
+    "year": 1998,
+    "genre": "Drama",
+    "description": "A former neo‑Nazi confronts his past and seeks to prevent his younger brother from repeating his mistakes."
+  },
+  {
+    "title": "Modern Times",
+    "year": 1936,
+    "genre": "Comedy / Drama",
+    "description": "A factory worker struggles to survive in an industrialized world, blending humor with social commentary."
+  },
+  {
+    "title": "Psycho",
+    "year": 1960,
+    "genre": "Horror / Thriller",
+    "description": "A secretary’s disappearance leads to a chilling investigation centered around a secluded motel and its troubled owner."
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "genre": "Action / Drama",
+    "description": "A betrayed general rises as a gladiator, seeking vengeance against the corrupt emperor who destroyed his family."
+  },
+  {
+    "title": "City Lights",
+    "year": 1931,
+    "genre": "Romance / Comedy",
+    "description": "A kind‑hearted tramp goes to great lengths to help a blind woman he loves, blending humor with heartfelt emotion."
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "genre": "Crime / Thriller",
+    "description": "An undercover cop and a mole within the police force engage in a tense game of deception as their worlds collide."
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "genre": "Drama / Music",
+    "description": "A young drummer faces relentless pressure from a demanding instructor, pushing him toward brilliance and self‑destruction."
+  },
+
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "genre": "Drama / Mystery",
+    "description": "Two rival magicians engage in a dangerous competition that blurs the line between illusion, obsession, and sacrifice."
+  },
+  {
+    "title": "Casablanca",
+    "year": 1942,
+    "genre": "Romance / Drama",
+    "description": "A cynical nightclub owner must choose between love and duty as war threatens everything he holds dear."
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "year": 1968,
+    "genre": "Western",
+    "description": "A mysterious stranger and a ruthless outlaw become entangled in a conflict over land, revenge, and survival."
+  },
+  {
+    "title": "Rear Window",
+    "year": 1954,
+    "genre": "Thriller / Mystery",
+    "description": "A photographer confined to his apartment becomes convinced he has witnessed a crime, leading to growing paranoia."
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "genre": "Sci‑Fi / Horror",
+    "description": "A space crew encounters a deadly extraterrestrial organism, forcing them into a desperate fight for survival."
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "genre": "War / Drama",
+    "description": "A soldier journeys upriver during the Vietnam War to confront a rogue officer whose methods defy military command."
+  },
+  {
+    "title": "Memento",
+    "year": 2000,
+    "genre": "Thriller / Mystery",
+    "description": "A man with short‑term memory loss hunts for his wife’s killer, relying on notes and tattoos to piece together the truth."
+  },
+  {
+    "title": "The Great Dictator",
+    "year": 1940,
+    "genre": "Comedy / Drama",
+    "description": "A humble barber becomes entangled in political turmoil as he is mistaken for a tyrannical ruler."
+  },
+  {
+    "title": "Cinema Paradiso",
+    "year": 1988,
+    "genre": "Drama",
+    "description": "A filmmaker reflects on his childhood friendship with a projectionist who introduced him to the magic of cinema."
+  },
+  {
+    "title": "The Lives of Others",
+    "year": 2006,
+    "genre": "Drama / Thriller",
+    "description": "A surveillance officer becomes emotionally entangled with the lives he monitors, challenging his loyalty to the state."
+  },
+
+  {
+    "title": "Grave of the Fireflies",
+    "year": 1988,
+    "genre": "Drama / War",
+    "description": "Two siblings struggle to survive during wartime, facing loss, hunger, and the harsh realities of conflict."
+  },
+  {
+    "title": "Paths of Glory",
+    "year": 1957,
+    "genre": "War / Drama",
+    "description": "A commander challenges the injustice of a military decision that threatens the lives of innocent soldiers."
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "genre": "Drama / Thriller",
+    "description": "A marginalized man descends into madness as societal neglect and personal trauma push him toward violence."
+  },
+  {
+    "title": "WALL·E",
+    "year": 2008,
+    "genre": "Animation / Sci‑Fi",
+    "description": "A lonely robot embarks on a journey that reveals humanity’s past mistakes and offers hope for its future."
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "genre": "Horror / Thriller",
+    "description": "A family’s stay at an isolated hotel turns sinister as supernatural forces and psychological unraveling take hold."
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "genre": "Action / Sci‑Fi",
+    "description": "Earth’s mightiest heroes unite to stop a cosmic tyrant whose quest for power threatens the universe itself."
+  },
+  {
+    "title": "Oldboy",
+    "year": 2003,
+    "genre": "Thriller / Mystery",
+    "description": "A man seeks vengeance after years of imprisonment, uncovering shocking truths that reshape his quest."
+  },
+  {
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "genre": "Fantasy / Adventure",
+    "description": "A young warrior becomes caught in a conflict between humans and forest spirits, confronting themes of nature and survival."
+  },
+  {
+    "title": "Witness for the Prosecution",
+    "year": 1957,
+    "genre": "Drama / Mystery",
+    "description": "A courtroom battle unfolds as a charismatic defendant faces accusations that challenge truth and loyalty."
+  },
+  {
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "genre": "Action / Drama",
+    "description": "Batman returns from exile to face a formidable enemy whose plans threaten to destroy Gotham City."
+  },
+
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "genre": "Western / Drama",
+    "description": "A freed slave teams up with a bounty hunter to rescue his wife from a ruthless plantation owner."
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "genre": "Drama / Crime",
+    "description": "A stockbroker rises to wealth through corruption and excess, facing consequences as his empire unravels."
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "genre": "Drama / Sci‑Fi",
+    "description": "A man discovers his entire life has been broadcast as a reality show, forcing him to confront truth and freedom."
+  },
+  {
+    "title": "The Sixth Sense",
+    "year": 1999,
+    "genre": "Thriller / Drama",
+    "description": "A troubled boy who sees spirits seeks help from a psychologist grappling with his own emotional struggles."
+  },
+  {
+    "title": "The Thing",
+    "year": 1982,
+    "genre": "Horror / Sci‑Fi",
+    "description": "A research team in Antarctica faces a shape‑shifting alien that can imitate any living being, sparking paranoia."
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "A detective hunts rogue androids in a dystopian future, confronting questions about identity and humanity."
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Animation / Adventure",
+    "description": "A group of toys navigates friendship and loyalty when their world is disrupted by the arrival of a new favorite."
+  },
+  {
+  "title": "Amélie",
+  "year": 2001,
+  "genre": "Romance / Comedy",
+  "description": "A shy young woman in Paris discovers joy in secretly improving the lives of those around her, but must find the courage to pursue her own happiness."
+}
+,
+  {
+    "title": "The Hunt",
+    "year": 2012,
+    "genre": "Drama / Thriller",
+    "description": "A teacher’s life unravels when a false accusation spreads through his small community, forcing him to confront fear, isolation, and injustice."
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": "Comedy / Drama",
+    "description": "A legendary concierge and his young protégé become entangled in a whirlwind of theft, murder, and loyalty across a vividly stylized Europe."
+  },
+  {
+    "title": "Howl’s Moving Castle",
+    "year": 2004,
+    "genre": "Fantasy / Animation",
+    "description": "A young woman cursed by magic seeks refuge in a wizard’s walking castle, discovering courage and love amid a brewing war."
+  },
+  {
+    "title": "The Handmaiden",
+    "year": 2016,
+    "genre": "Thriller / Drama",
+    "description": "A con artist’s elaborate scheme becomes increasingly tangled as deception, desire, and shifting loyalties reshape everyone’s fate."
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "genre": "Drama / Biography",
+    "description": "The rise of a tech empire sparks conflict, ambition, and betrayal as friendships fracture under the weight of innovation."
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "genre": "Sci‑Fi / Romance",
+    "description": "A lonely writer forms a deep connection with an advanced AI, exploring intimacy, identity, and the evolving nature of love."
+  },
+  {
+    "title": "The Revenant",
+    "year": 2015,
+    "genre": "Adventure / Drama",
+    "description": "A frontiersman fights for survival after a brutal attack, driven by resilience and a burning desire for justice."
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "genre": "Action / Adventure",
+    "description": "In a desolate wasteland, a fugitive and a lone warrior join forces to escape tyranny, sparking a relentless high‑speed pursuit."
+  },
+  {
+    "title": "Room",
+    "year": 2015,
+    "genre": "Drama / Thriller",
+    "description": "A mother and her young son attempt a daring escape from captivity, confronting the challenges of freedom and healing."
+  },
+  {
+    "title": "The Imitation Game",
+    "year": 2014,
+    "genre": "Drama / Historical",
+    "description": "A brilliant mathematician races to crack enemy codes during wartime while battling secrecy, pressure, and personal struggles."
+  },
+
+  {
+    "title": "Spotlight",
+    "year": 2015,
+    "genre": "Drama / Biography",
+    "description": "A team of journalists uncovers a widespread scandal, revealing the power of persistence and the importance of truth."
+  },
+  {
+    "title": "Birdman",
+    "year": 2014,
+    "genre": "Drama / Comedy",
+    "description": "A fading actor attempts to revive his career while battling ego, identity, and surreal visions that blur reality."
+  },
+  {
+    "title": "Moonlight",
+    "year": 2016,
+    "genre": "Drama",
+    "description": "A young man navigates identity, hardship, and connection across three pivotal stages of his life."
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "genre": "Romance / Musical",
+    "description": "An aspiring actress and a jazz musician chase their dreams in Los Angeles, discovering the cost of ambition and love."
+  },
+  {
+    "title": "1917",
+    "year": 2019,
+    "genre": "War / Drama",
+    "description": "Two soldiers undertake a perilous mission across enemy territory to deliver a message that could save thousands of lives."
+  },
+  {
+    "title": "Judas and the Black Messiah",
+    "year": 2021,
+    "genre": "Drama / Historical",
+    "description": "An informant infiltrates a revolutionary movement, facing moral conflict as political tensions escalate."
+  },
+  {
+    "title": "The Father",
+    "year": 2020,
+    "genre": "Drama",
+    "description": "An aging man struggles with memory loss as his world becomes increasingly fragmented, revealing the emotional toll on loved ones."
+  },
+  {
+    "title": "The Shape of Water",
+    "year": 2017,
+    "genre": "Fantasy / Romance",
+    "description": "A mute woman forms a profound bond with a mysterious aquatic creature, challenging societal norms and personal fears."
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "genre": "Sci‑Fi / Drama",
+    "description": "A young officer uncovers a long‑buried secret that threatens the fragile balance of a dystopian future."
+  },
+  {
+    "title": "Arrival",
+    "year": 2016,
+    "genre": "Sci‑Fi / Drama",
+    "description": "A linguist attempts to communicate with extraterrestrial visitors, uncovering revelations that reshape humanity’s understanding of time."
+  },
+
+  {
+    "title": "Manchester by the Sea",
+    "year": 2016,
+    "genre": "Drama",
+    "description": "A grieving man returns to his hometown, confronting painful memories and unexpected responsibilities."
+  },
+  {
+    "title": "Three Billboards Outside Ebbing, Missouri",
+    "year": 2017,
+    "genre": "Drama / Crime",
+    "description": "A determined mother challenges local authorities after a tragedy, sparking conflict, introspection, and unexpected alliances."
+  },
+  {
+    "title": "The Big Short",
+    "year": 2015,
+    "genre": "Drama / Biography",
+    "description": "A group of outsiders predict a financial collapse and attempt to profit from it, exposing systemic flaws and greed."
+  },
+  {
+    "title": "Ex Machina",
+    "year": 2014,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "A programmer evaluates an advanced AI, uncovering unsettling truths about consciousness, manipulation, and control."
+  },
+  {
+    "title": "The Hateful Eight",
+    "year": 2015,
+    "genre": "Western / Drama",
+    "description": "Strangers trapped in a remote lodge confront secrets and rising tension as mistrust threatens to erupt into violence."
+  },
+  {
+    "title": "Brooklyn",
+    "year": 2015,
+    "genre": "Romance / Drama",
+    "description": "A young immigrant builds a new life in America while torn between love, identity, and her roots."
+  },
+  {
+    "title": "The Theory of Everything",
+    "year": 2014,
+    "genre": "Drama / Biography",
+    "description": "The life of a brilliant physicist unfolds alongside his relationship with his devoted partner as they face profound challenges."
+  },
+  {
+    "title": "Dallas Buyers Club",
+    "year": 2013,
+    "genre": "Drama / Biography",
+    "description": "A man diagnosed with a life‑threatening illness fights for access to treatment, challenging medical norms and societal barriers."
+  },
+  {
+    "title": "The King's Speech",
+    "year": 2010,
+    "genre": "Drama / Historical",
+    "description": "A reluctant monarch seeks help to overcome a speech impediment as he prepares to lead his nation through crisis."
+  },
+  {
+    "title": "Black Swan",
+    "year": 2010,
+    "genre": "Drama / Thriller",
+    "description": "A dancer’s pursuit of perfection spirals into obsession as she confronts psychological turmoil and artistic pressure."
+  },
+
+  {
+    "title": "Shutter Island",
+    "year": 2010,
+    "genre": "Thriller / Mystery",
+    "description": "A U.S. Marshal investigates a disappearance at a remote asylum, uncovering disturbing secrets that challenge his sanity."
+  },
+  {
+    "title": "The Fighter",
+    "year": 2010,
+    "genre": "Drama / Sports",
+    "description": "A boxer attempts to revive his career while navigating family conflict, loyalty, and personal redemption."
+  },
+  {
+    "title": "The Town",
+    "year": 2010,
+    "genre": "Crime / Drama",
+    "description": "A skilled thief faces a crossroads when he falls for someone connected to his latest heist, threatening his criminal path."
+  },
+  {
+    "title": "True Grit",
+    "year": 2010,
+    "genre": "Western / Drama",
+    "description": "A determined young girl seeks justice for her father’s death, aided by a gruff lawman with his own troubled past."
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "year": 2011,
+    "genre": "Thriller / Mystery",
+    "description": "A journalist and a brilliant hacker investigate a decades‑old disappearance, uncovering dark secrets within a powerful family."
+  },
+  {
+    "title": "Drive",
+    "year": 2011,
+    "genre": "Crime / Thriller",
+    "description": "A quiet stunt driver becomes entangled in a violent criminal world after trying to protect someone he cares for."
+  },
+  {
+    "title": "Moneyball",
+    "year": 2011,
+    "genre": "Drama / Sports",
+    "description": "A baseball manager challenges tradition by using data‑driven strategies to build a competitive team against the odds."
+  },
+  {
+    "title": "The Artist",
+    "year": 2011,
+    "genre": "Drama / Romance",
+    "description": "A silent film star struggles to adapt as Hollywood transitions to sound, confronting pride, change, and unexpected friendship."
+  },
+  {
+    "title": "The Intouchables",
+    "year": 2011,
+    "genre": "Drama / Comedy",
+    "description": "A wealthy man and his caretaker form an unlikely bond, discovering humor, trust, and resilience through shared experiences."
+  },
+  {
+    "title": "Warrior",
+    "year": 2011,
+    "genre": "Drama / Sports",
+    "description": "Two estranged brothers face emotional and physical battles as they prepare to compete in a high‑stakes tournament."
+  },
+
+  {
+    "title": "The Cabin in the Woods",
+    "year": 2012,
+    "genre": "Horror / Comedy",
+    "description": "A group of friends encounters unexpected horrors in a remote cabin as hidden forces manipulate their fate."
+  },
+  {
+    "title": "Silver Linings Playbook",
+    "year": 2012,
+    "genre": "Drama / Romance",
+    "description": "Two troubled individuals form a connection that helps them confront personal struggles and rebuild their lives."
+  },
+  {
+    "title": "Life of Pi",
+    "year": 2012,
+    "genre": "Adventure / Drama",
+    "description": "A young man stranded at sea with a Bengal tiger embarks on a journey of survival, faith, and self‑discovery."
+  },
+  {
+    "title": "Zero Dark Thirty",
+    "year": 2012,
+    "genre": "Drama / Thriller",
+    "description": "An intelligence analyst leads a decade‑long pursuit of a notorious figure, navigating danger, strategy, and moral complexity."
+  },
+  {
+    "title": "Argo",
+    "year": 2012,
+    "genre": "Drama / Thriller",
+    "description": "A daring rescue mission unfolds as a CIA agent poses as a filmmaker to extract hostages from a volatile situation."
+  },
+  {
+    "title": "Les Misérables",
+    "year": 2012,
+    "genre": "Musical / Drama",
+    "description": "Lives intertwine across decades of struggle, revolution, and redemption in a sweeping tale of sacrifice and hope."
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "genre": "Western / Drama",
+    "description": "A freed slave teams up with a bounty hunter to rescue his wife from a ruthless plantation owner."
+  },
+  {
+    "title": "Lincoln",
+    "year": 2012,
+    "genre": "Drama / Historical",
+    "description": "A president navigates political conflict and moral challenges as he fights to pass a landmark amendment."
+  },
+  {
+    "title": "The Perks of Being a Wallflower",
+    "year": 2012,
+    "genre": "Drama / Romance",
+    "description": "A shy teenager finds friendship and healing as he navigates high school, trauma, and self‑discovery."
+  },
+  {
+    "title": "Looper",
+    "year": 2012,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "A hitman confronts his future self, sparking a tense battle that challenges fate, morality, and survival."
+  },
+
+  {
+    "title": "Gravity",
+    "year": 2013,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "Two astronauts fight for survival after a catastrophic accident leaves them stranded in the vastness of space."
+  },
+  {
+    "title": "Prisoners",
+    "year": 2013,
+    "genre": "Thriller / Drama",
+    "description": "A desperate father takes matters into his own hands when his daughter goes missing, blurring the line between justice and vengeance."
+  },
+  {
+    "title": "Rush",
+    "year": 2013,
+    "genre": "Drama / Sports",
+    "description": "Two rival drivers push themselves to the limit in a fierce competition that tests ambition, resilience, and identity."
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "genre": "Drama / Crime",
+    "description": "A stockbroker rises to wealth through corruption and excess, facing consequences as his empire unravels."
+  },
+  {
+    "title": "Captain Phillips",
+    "year": 2013,
+    "genre": "Drama / Thriller",
+    "description": "A cargo ship captain faces a tense standoff when his vessel is hijacked by pirates, revealing courage and vulnerability."
+  },
+  {
+    "title": "Inside Llewyn Davis",
+    "year": 2013,
+    "genre": "Drama / Music",
+    "description": "A struggling musician navigates hardship and artistic identity in the folk scene of 1960s New York."
+  },
+  {
+    "title": "12 Years a Slave",
+    "year": 2013,
+    "genre": "Drama / Historical",
+    "description": "A free man is kidnapped and forced into slavery, fighting to survive and reclaim his identity."
+  },
+  {
+    "title": "The Great Gatsby",
+    "year": 2013,
+    "genre": "Drama / Romance",
+    "description": "A mysterious millionaire’s lavish lifestyle masks longing, secrets, and the pursuit of an unattainable dream."
+  },
+  {
+    "title": "The Hobbit: The Desolation of Smaug",
+    "year": 2013,
+    "genre": "Fantasy / Adventure",
+    "description": "A band of adventurers confront a deadly dragon as their quest grows more perilous and morally complex."
+  },
+  {
+    "title": "The Way Way Back",
+    "year": 2013,
+    "genre": "Drama / Comedy",
+    "description": "A shy teenager finds confidence and belonging during a summer spent working at a water park."
+  }
+  ,
+  {
+    "title": "The Florida Project",
+    "year": 2017,
+    "genre": "Drama",
+    "description": "A spirited young girl and her mother navigate life on the margins of society, finding joy and resilience in unexpected places."
+  },
+  {
+    "title": "Lady Bird",
+    "year": 2017,
+    "genre": "Drama / Comedy",
+    "description": "A teenager clashes with her strong‑willed mother as she searches for identity, independence, and a sense of belonging."
+  },
+  {
+    "title": "Call Me by Your Name",
+    "year": 2017,
+    "genre": "Romance / Drama",
+    "description": "A young man experiences a transformative summer romance that shapes his understanding of love and self‑discovery."
+  },
+  {
+    "title": "Dunkirk",
+    "year": 2017,
+    "genre": "War / Drama",
+    "description": "Soldiers face overwhelming odds during a massive evacuation, revealing courage, fear, and the will to survive."
+  },
+  {
+    "title": "Baby Driver",
+    "year": 2017,
+    "genre": "Action / Crime",
+    "description": "A getaway driver tries to escape a criminal life, relying on music, skill, and determination as danger closes in."
+  },
+  {
+    "title": "The Disaster Artist",
+    "year": 2017,
+    "genre": "Comedy / Drama",
+    "description": "An aspiring actor befriends an eccentric filmmaker, leading to the creation of one of cinema’s most infamous cult films."
+  },
+  {
+    "title": "Wind River",
+    "year": 2017,
+    "genre": "Thriller / Crime",
+    "description": "A wildlife tracker and an FBI agent investigate a mysterious death on a remote reservation, uncovering harsh truths."
+  },
+  {
+    "title": "The Killing of a Sacred Deer",
+    "year": 2017,
+    "genre": "Thriller / Drama",
+    "description": "A surgeon’s life unravels when a strange teenager enters his world, forcing him to confront guilt and consequence."
+  },
+  {
+    "title": "The Square",
+    "year": 2017,
+    "genre": "Drama / Comedy",
+    "description": "A museum curator faces chaos after a controversial art installation sparks questions about morality and social responsibility."
+  },
+  {
+    "title": "The Breadwinner",
+    "year": 2017,
+    "genre": "Animation / Drama",
+    "description": "A young girl disguises herself as a boy to support her family, discovering strength and courage amid adversity."
+  },
+
+  {
+    "title": "The Favourite",
+    "year": 2018,
+    "genre": "Drama / Comedy",
+    "description": "Two women compete for influence in the royal court, navigating manipulation, ambition, and shifting alliances."
+  },
+  {
+    "title": "A Star Is Born",
+    "year": 2018,
+    "genre": "Drama / Romance",
+    "description": "A seasoned musician helps a rising singer find fame as their relationship becomes strained by addiction and insecurity."
+  },
+  {
+    "title": "Green Book",
+    "year": 2018,
+    "genre": "Drama / Biography",
+    "description": "A working‑class driver and a refined musician form an unlikely bond during a tour through the American South."
+  },
+  {
+    "title": "Roma",
+    "year": 2018,
+    "genre": "Drama",
+    "description": "A domestic worker navigates personal and societal challenges in 1970s Mexico, revealing quiet strength and resilience."
+  },
+  {
+    "title": "Shoplifters",
+    "year": 2018,
+    "genre": "Drama",
+    "description": "A makeshift family survives through petty theft until a discovery forces them to confront loyalty, love, and identity."
+  },
+  {
+    "title": "BlacKkKlansman",
+    "year": 2018,
+    "genre": "Drama / Crime",
+    "description": "An African‑American detective infiltrates a hate group, exposing prejudice and absurdity through a daring undercover mission."
+  },
+  {
+    "title": "Cold War",
+    "year": 2018,
+    "genre": "Drama / Romance",
+    "description": "Two lovers navigate political turmoil and personal conflict across decades, bound by passion and divided by circumstance."
+  },
+  {
+    "title": "Annihilation",
+    "year": 2018,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "A group of scientists explores a mysterious zone where nature behaves unpredictably, confronting danger and transformation."
+  },
+  {
+    "title": "First Man",
+    "year": 2018,
+    "genre": "Drama / Biography",
+    "description": "The story of the first moon landing unfolds through the emotional and physical challenges faced by astronaut Neil Armstrong."
+  },
+  {
+    "title": "If Beale Street Could Talk",
+    "year": 2018,
+    "genre": "Drama / Romance",
+    "description": "A young woman fights to prove her partner’s innocence while navigating love, injustice, and family bonds."
+  },
+
+  {
+    "title": "Jojo Rabbit",
+    "year": 2019,
+    "genre": "Comedy / Drama",
+    "description": "A boy in wartime confronts propaganda and prejudice when he discovers a secret that challenges everything he believes."
+  },
+  {
+    "title": "Marriage Story",
+    "year": 2019,
+    "genre": "Drama",
+    "description": "A couple navigates the emotional complexities of divorce, revealing vulnerability, conflict, and enduring connection."
+  },
+  {
+    "title": "Ford v Ferrari",
+    "year": 2019,
+    "genre": "Drama / Sports",
+    "description": "A team of innovators challenges racing giants, pushing engineering and determination to their limits."
+  },
+  {
+    "title": "Little Women",
+    "year": 2019,
+    "genre": "Drama / Romance",
+    "description": "Four sisters grow, dream, and struggle through life’s joys and hardships, bound by love and ambition."
+  },
+  {
+    "title": "Portrait of a Lady on Fire",
+    "year": 2019,
+    "genre": "Drama / Romance",
+    "description": "An artist and her subject form a profound connection as they navigate desire, duty, and the constraints of society."
+  },
+  {
+    "title": "Knives Out",
+    "year": 2019,
+    "genre": "Mystery / Comedy",
+    "description": "A detective investigates a wealthy family’s secrets after a suspicious death, uncovering lies and unexpected twists."
+  },
+  {
+    "title": "The Lighthouse",
+    "year": 2019,
+    "genre": "Drama / Horror",
+    "description": "Two lighthouse keepers descend into paranoia and madness as isolation and supernatural forces close in."
+  },
+  {
+    "title": "Uncut Gems",
+    "year": 2019,
+    "genre": "Drama / Thriller",
+    "description": "A charismatic jeweler’s risky bets spiral out of control as he chases fortune and struggles with mounting pressure."
+  },
+  {
+    "title": "1917",
+    "year": 2019,
+    "genre": "War / Drama",
+    "description": "Two soldiers undertake a perilous mission across enemy territory to deliver a message that could save thousands."
+  },
+  {
+    "title": "The Peanut Butter Falcon",
+    "year": 2019,
+    "genre": "Drama / Adventure",
+    "description": "A young man with dreams of wrestling embarks on a journey with an unlikely companion, discovering friendship and purpose."
+  },
+
+  {
+    "title": "Sound of Metal",
+    "year": 2019,
+    "genre": "Drama / Music",
+    "description": "A drummer confronts the loss of his hearing, navigating identity, acceptance, and the search for inner peace."
+  },
+  {
+    "title": "The Invisible Man",
+    "year": 2020,
+    "genre": "Horror / Thriller",
+    "description": "A woman fights to prove she is being hunted by an unseen tormentor, confronting fear and disbelief."
+  },
+  {
+    "title": "Soul",
+    "year": 2020,
+    "genre": "Animation / Drama",
+    "description": "A musician’s journey through the afterlife reveals the beauty of purpose, passion, and everyday moments."
+  },
+  {
+    "title": "Minari",
+    "year": 2020,
+    "genre": "Drama",
+    "description": "A Korean‑American family builds a new life in rural America, facing challenges with hope, resilience, and love."
+  },
+  {
+    "title": "Promising Young Woman",
+    "year": 2020,
+    "genre": "Thriller / Drama",
+    "description": "A woman seeks justice for a past trauma, confronting societal norms and moral ambiguity with determination."
+  },
+  {
+    "title": "Nomadland",
+    "year": 2020,
+    "genre": "Drama",
+    "description": "A woman embraces life on the road, discovering community, independence, and the meaning of home."
+  },
+  {
+    "title": "The Trial of the Chicago 7",
+    "year": 2020,
+    "genre": "Drama / Historical",
+    "description": "Activists face a controversial trial that exposes political tension, protest, and the fight for justice."
+  },
+  {
+    "title": "Another Round",
+    "year": 2020,
+    "genre": "Drama / Comedy",
+    "description": "Four teachers experiment with maintaining a constant level of intoxication, discovering unexpected consequences."
+  },
+  {
+    "title": "The Green Knight",
+    "year": 2021,
+    "genre": "Fantasy / Drama",
+    "description": "A young knight embarks on a mystical quest that challenges his honor, courage, and destiny."
+  },
+  {
+    "title": "Pig",
+    "year": 2021,
+    "genre": "Drama / Thriller",
+    "description": "A reclusive chef searches for his stolen companion, uncovering emotional truths and confronting his past."
+  },
+
+  {
+    "title": "Dune",
+    "year": 2021,
+    "genre": "Sci‑Fi / Adventure",
+    "description": "A young nobleman faces political intrigue and ancient prophecy as he navigates a desert world filled with danger."
+  },
+  {
+    "title": "The Power of the Dog",
+    "year": 2021,
+    "genre": "Drama / Western",
+    "description": "A rancher’s harsh demeanor masks deep emotional conflict as tension grows within his family."
+  },
+  {
+    "title": "Tick, Tick... Boom!",
+    "year": 2021,
+    "genre": "Drama / Musical",
+    "description": "A struggling composer races against time to achieve his dreams while confronting doubt and ambition."
+  },
+  {
+    "title": "Belfast",
+    "year": 2021,
+    "genre": "Drama",
+    "description": "A young boy grows up amid political unrest, finding joy and hope through family and community."
+  },
+  {
+    "title": "CODA",
+    "year": 2021,
+    "genre": "Drama / Music",
+    "description": "A hearing teenager in a deaf family discovers her passion for singing while navigating responsibility and independence."
+  },
+  {
+    "title": "The Worst Person in the World",
+    "year": 2021,
+    "genre": "Drama / Romance",
+    "description": "A woman explores love, identity, and purpose across several transformative years of her life."
+  },
+  {
+    "title": "Drive My Car",
+    "year": 2021,
+    "genre": "Drama",
+    "description": "An actor confronts grief and connection during a theater production, forming unexpected bonds along the way."
+  },
+  {
+    "title": "No Time to Die",
+    "year": 2021,
+    "genre": "Action / Thriller",
+    "description": "A retired agent returns to confront a dangerous new threat that tests loyalty, sacrifice, and legacy."
+  },
+  {
+    "title": "The Batman",
+    "year": 2022,
+    "genre": "Action / Crime",
+    "description": "A young vigilante investigates a series of cryptic crimes, uncovering corruption that runs deep within his city."
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "genre": "Sci‑Fi / Comedy",
+    "description": "A woman discovers she can access alternate versions of herself, embarking on a chaotic journey of identity and connection."
+  }
+,
+  {
+    "title": "Tár",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A renowned conductor faces mounting pressure as personal and professional conflicts threaten her carefully constructed world."
+  },
+  {
+    "title": "Aftersun",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A woman reflects on a childhood vacation with her father, uncovering emotional truths through fragmented memories."
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "genre": "Action / Drama",
+    "description": "A veteran pilot returns to train a new generation, confronting legacy, danger, and the limits of his own past."
+  },
+  {
+    "title": "The Banshees of Inisherin",
+    "year": 2022,
+    "genre": "Drama / Comedy",
+    "description": "Two lifelong friends face an unexpected rift, revealing loneliness, stubbornness, and the complexities of human connection."
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "year": 2022,
+    "genre": "War / Drama",
+    "description": "A young soldier experiences the brutal realities of war, confronting fear, loss, and the futility of conflict."
+  },
+  {
+    "title": "RRR",
+    "year": 2022,
+    "genre": "Action / Drama",
+    "description": "Two revolutionaries forge a powerful bond as they fight oppression, blending mythic heroism with explosive spectacle."
+  },
+  {
+    "title": "Decision to Leave",
+    "year": 2022,
+    "genre": "Thriller / Romance",
+    "description": "A detective becomes entangled with a mysterious widow, blurring the line between duty and desire."
+  },
+  {
+    "title": "Nope",
+    "year": 2022,
+    "genre": "Sci‑Fi / Horror",
+    "description": "Siblings uncover a strange presence in the sky, confronting spectacle, fear, and the cost of chasing fame."
+  },
+  {
+    "title": "The Whale",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A reclusive teacher attempts to reconnect with his estranged daughter, confronting guilt, grief, and hope."
+  },
+  {
+    "title": "Guillermo del Toro’s Pinocchio",
+    "year": 2022,
+    "genre": "Animation / Fantasy",
+    "description": "A wooden boy embarks on a journey of identity and love in a darkly reimagined tale of creation and humanity."
+  },
+
+  {
+    "title": "Past Lives",
+    "year": 2023,
+    "genre": "Drama / Romance",
+    "description": "Childhood friends reunite years later, exploring fate, longing, and the paths not taken."
+  },
+  {
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genre": "Drama / Historical",
+    "description": "A physicist grapples with ambition, morality, and consequence as he leads a project that will change the world forever."
+  },
+  {
+    "title": "Killers of the Flower Moon",
+    "year": 2023,
+    "genre": "Drama / Crime",
+    "description": "A series of murders in an Indigenous community exposes greed, corruption, and the dark side of power."
+  },
+  {
+    "title": "The Holdovers",
+    "year": 2023,
+    "genre": "Drama / Comedy",
+    "description": "A strict teacher, a troubled student, and a grieving cook form an unlikely bond during a lonely holiday break."
+  },
+  {
+    "title": "Anatomy of a Fall",
+    "year": 2023,
+    "genre": "Drama / Thriller",
+    "description": "A writer becomes the prime suspect in her husband’s death, forcing her family to confront truth and doubt."
+  },
+  {
+    "title": "The Zone of Interest",
+    "year": 2023,
+    "genre": "Drama / Historical",
+    "description": "A family lives beside a concentration camp, revealing chilling contrasts between domestic life and systemic horror."
+  },
+  {
+    "title": "Spider‑Man: Across the Spider‑Verse",
+    "year": 2023,
+    "genre": "Animation / Action",
+    "description": "A young hero travels across multiverses, confronting new threats and discovering the weight of his own choices."
+  },
+  {
+    "title": "Poor Things",
+    "year": 2023,
+    "genre": "Fantasy / Drama",
+    "description": "A woman brought back to life embarks on a surreal journey of self‑discovery, challenging societal norms and expectations."
+  },
+  {
+    "title": "The Creator",
+    "year": 2023,
+    "genre": "Sci‑Fi / Action",
+    "description": "A soldier confronts moral dilemmas in a future where humans and AI wage a devastating war."
+  },
+  {
+    "title": "Saltburn",
+    "year": 2023,
+    "genre": "Drama / Thriller",
+    "description": "A student becomes entangled with a wealthy family, uncovering obsession, privilege, and dark secrets."
+  },
+
+  {
+    "title": "The Iron Claw",
+    "year": 2023,
+    "genre": "Drama / Sports",
+    "description": "A wrestling family faces triumph and tragedy as they navigate fame, pressure, and generational trauma."
+  },
+  {
+    "title": "Maestro",
+    "year": 2023,
+    "genre": "Drama / Biography",
+    "description": "A legendary composer’s life unfolds through passion, artistry, and the complexities of love."
+  },
+  {
+    "title": "Napoleon",
+    "year": 2023,
+    "genre": "Drama / Historical",
+    "description": "A military leader rises to power through ambition and strategy, confronting conflict on both the battlefield and at home."
+  },
+  {
+    "title": "The Killer",
+    "year": 2023,
+    "genre": "Thriller / Crime",
+    "description": "A meticulous assassin faces unexpected complications that challenge his discipline and resolve."
+  },
+  {
+    "title": "Asteroid City",
+    "year": 2023,
+    "genre": "Comedy / Drama",
+    "description": "A small desert town becomes the center of strange events, blending whimsy, nostalgia, and existential curiosity."
+  },
+  {
+    "title": "All of Us Strangers",
+    "year": 2023,
+    "genre": "Drama / Romance",
+    "description": "A writer reconnects with his past in unexpected ways, exploring grief, memory, and emotional healing."
+  },
+  {
+    "title": "The Boy and the Heron",
+    "year": 2023,
+    "genre": "Animation / Fantasy",
+    "description": "A young boy enters a mysterious world guided by a strange heron, confronting loss and transformation."
+  },
+  {
+    "title": "Ferrari",
+    "year": 2023,
+    "genre": "Drama / Biography",
+    "description": "A racing icon faces personal and professional turmoil during a pivotal moment in his career."
+  },
+  {
+    "title": "Civil War",
+    "year": 2024,
+    "genre": "Drama / Thriller",
+    "description": "Journalists travel through a fractured nation, documenting conflict while confronting danger and moral uncertainty."
+  },
+  {
+    "title": "The Beekeeper",
+    "year": 2024,
+    "genre": "Action / Thriller",
+    "description": "A quiet man unleashes his deadly skills to avenge a friend, revealing a hidden past and relentless determination."
+  },
+
+  {
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "genre": "Sci‑Fi / Adventure",
+    "description": "A young leader embraces his destiny as political alliances shift and ancient prophecies unfold across a desert world."
+  },
+  {
+    "title": "Challengers",
+    "year": 2024,
+    "genre": "Drama / Romance",
+    "description": "A tennis prodigy becomes entangled in a tense love triangle that spans years of ambition, rivalry, and desire."
+  },
+  {
+    "title": "The Taste of Things",
+    "year": 2023,
+    "genre": "Drama / Romance",
+    "description": "A chef and his partner share a deep bond through culinary artistry, exploring love, passion, and devotion."
+  },
+  {
+    "title": "Hit Man",
+    "year": 2023,
+    "genre": "Comedy / Crime",
+    "description": "A mild‑mannered professor adopts a bold persona as an undercover operative, discovering confidence and chaos along the way."
+  },
+  {
+    "title": "The Marvels",
+    "year": 2023,
+    "genre": "Action / Sci‑Fi",
+    "description": "Three heroes find their powers mysteriously linked, forcing them to work together to confront a cosmic threat."
+  },
+  {
+    "title": "Wonka",
+    "year": 2023,
+    "genre": "Fantasy / Comedy",
+    "description": "A young inventor pursues his dream of creating magical confections, facing obstacles with creativity and charm."
+  },
+  {
+    "title": "Rebel Moon",
+    "year": 2023,
+    "genre": "Sci‑Fi / Action",
+    "description": "A mysterious outsider rallies a group of warriors to defend their world from an oppressive empire."
+  },
+  {
+    "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+    "year": 2023,
+    "genre": "Drama / Sci‑Fi",
+    "description": "A young man mentors a tribute in a deadly competition, revealing ambition, manipulation, and the origins of tyranny."
+  },
+  {
+    "title": "Leave the World Behind",
+    "year": 2023,
+    "genre": "Drama / Thriller",
+    "description": "Two families confront uncertainty and fear as mysterious events unfold, challenging trust and survival."
+  },
+  {
+    "title": "Saltburn",
+    "year": 2023,
+    "genre": "Drama / Thriller",
+    "description": "A student becomes entangled with a wealthy family, uncovering obsession, privilege, and dark secrets."
+  }
+,
+  {
+    "title": "Civil War",
+    "year": 2024,
+    "genre": "Drama / Thriller",
+    "description": "Journalists travel through a fractured nation, documenting conflict while confronting danger and moral uncertainty."
+  },
+  {
+    "title": "The Beekeeper",
+    "year": 2024,
+    "genre": "Action / Thriller",
+    "description": "A quiet man unleashes his deadly skills to avenge a friend, revealing a hidden past and relentless determination."
+  },
+  {
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "genre": "Sci‑Fi / Adventure",
+    "description": "A young leader embraces his destiny as political alliances shift and ancient prophecies unfold across a desert world."
+  },
+  {
+    "title": "Challengers",
+    "year": 2024,
+    "genre": "Drama / Romance",
+    "description": "A tennis prodigy becomes entangled in a tense love triangle that spans years of ambition, rivalry, and desire."
+  },
+  {
+    "title": "The Taste of Things",
+    "year": 2023,
+    "genre": "Drama / Romance",
+    "description": "A chef and his partner share a deep bond through culinary artistry, exploring love, passion, and devotion."
+  },
+  {
+    "title": "Hit Man",
+    "year": 2023,
+    "genre": "Comedy / Crime",
+    "description": "A mild‑mannered professor adopts a bold persona as an undercover operative, discovering confidence and chaos along the way."
+  },
+  {
+    "title": "The Marvels",
+    "year": 2023,
+    "genre": "Action / Sci‑Fi",
+    "description": "Three heroes find their powers mysteriously linked, forcing them to work together to confront a cosmic threat."
+  },
+  {
+    "title": "Wonka",
+    "year": 2023,
+    "genre": "Fantasy / Comedy",
+    "description": "A young inventor pursues his dream of creating magical confections, facing obstacles with creativity and charm."
+  },
+  {
+    "title": "Rebel Moon",
+    "year": 2023,
+    "genre": "Sci‑Fi / Action",
+    "description": "A mysterious outsider rallies a group of warriors to defend their world from an oppressive empire."
+  },
+  {
+    "title": "Leave the World Behind",
+    "year": 2023,
+    "genre": "Drama / Thriller",
+    "description": "Two families confront uncertainty and fear as mysterious events unfold, challenging trust and survival."
+  },
+
+  {
+    "title": "The Color Purple",
+    "year": 2023,
+    "genre": "Drama / Musical",
+    "description": "A woman’s journey of resilience and empowerment unfolds through hardship, sisterhood, and the transformative power of music."
+  },
+  {
+    "title": "Next Goal Wins",
+    "year": 2023,
+    "genre": "Comedy / Sports",
+    "description": "A struggling football team attempts an unlikely comeback under the guidance of an unconventional coach."
+  },
+  {
+    "title": "The Creator",
+    "year": 2023,
+    "genre": "Sci‑Fi / Action",
+    "description": "A soldier confronts moral dilemmas in a future where humans and AI wage a devastating war."
+  },
+  {
+    "title": "The Killer",
+    "year": 2023,
+    "genre": "Thriller / Crime",
+    "description": "A meticulous assassin faces unexpected complications that challenge his discipline and resolve."
+  },
+  {
+    "title": "Ferrari",
+    "year": 2023,
+    "genre": "Drama / Biography",
+    "description": "A racing icon faces personal and professional turmoil during a pivotal moment in his career."
+  },
+  {
+    "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+    "year": 2023,
+    "genre": "Drama / Sci‑Fi",
+    "description": "A young man mentors a tribute in a deadly competition, revealing ambition, manipulation, and the origins of tyranny."
+  },
+  {
+    "title": "Napoleon",
+    "year": 2023,
+    "genre": "Drama / Historical",
+    "description": "A military leader rises to power through ambition and strategy, confronting conflict on both the battlefield and at home."
+  },
+  {
+    "title": "Wonka",
+    "year": 2023,
+    "genre": "Fantasy / Comedy",
+    "description": "A young chocolatier pursues his dream with creativity and determination, facing whimsical challenges along the way."
+  },
+  {
+    "title": "Saltburn",
+    "year": 2023,
+    "genre": "Drama / Thriller",
+    "description": "A student becomes entangled with a wealthy family, uncovering obsession, privilege, and dark secrets."
+  },
+  {
+    "title": "The Boy and the Heron",
+    "year": 2023,
+    "genre": "Animation / Fantasy",
+    "description": "A young boy enters a mysterious world guided by a strange heron, confronting loss and transformation."
+  },
+
+  {
+    "title": "The Iron Claw",
+    "year": 2023,
+    "genre": "Drama / Sports",
+    "description": "A wrestling family faces triumph and tragedy as they navigate fame, pressure, and generational trauma."
+  },
+  {
+    "title": "All of Us Strangers",
+    "year": 2023,
+    "genre": "Drama / Romance",
+    "description": "A writer reconnects with his past in unexpected ways, exploring grief, memory, and emotional healing."
+  },
+  {
+    "title": "Asteroid City",
+    "year": 2023,
+    "genre": "Comedy / Drama",
+    "description": "A small desert town becomes the center of strange events, blending whimsy, nostalgia, and existential curiosity."
+  },
+  {
+    "title": "Civil War",
+    "year": 2024,
+    "genre": "Drama / Thriller",
+    "description": "Journalists travel through a fractured nation, documenting conflict while confronting danger and moral uncertainty."
+  },
+  {
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "genre": "Sci‑Fi / Adventure",
+    "description": "A young leader embraces his destiny as political alliances shift and ancient prophecies unfold across a desert world."
+  },
+  {
+    "title": "Challengers",
+    "year": 2024,
+    "genre": "Drama / Romance",
+    "description": "A tennis prodigy becomes entangled in a tense love triangle that spans years of ambition, rivalry, and desire."
+  },
+  {
+    "title": "The Beekeeper",
+    "year": 2024,
+    "genre": "Action / Thriller",
+    "description": "A quiet man unleashes his deadly skills to avenge a friend, revealing a hidden past and relentless determination."
+  },
+  {
+    "title": "Monkey Man",
+    "year": 2024,
+    "genre": "Action / Thriller",
+    "description": "A masked vigilante seeks revenge against corrupt forces, blending mythic symbolism with explosive action."
+  },
+  {
+    "title": "The Ministry of Ungentlemanly Warfare",
+    "year": 2024,
+    "genre": "Action / War",
+    "description": "A covert team undertakes a daring mission during wartime, using unconventional tactics to strike at enemy forces."
+  },
+  {
+    "title": "Kinds of Kindness",
+    "year": 2024,
+    "genre": "Drama / Thriller",
+    "description": "Three interconnected stories explore control, desire, and the strange ways people seek meaning in their lives."
+  },
+
+  {
+    "title": "Twisters",
+    "year": 2024,
+    "genre": "Action / Thriller",
+    "description": "A new generation of storm chasers confronts powerful tornadoes, blending science, danger, and personal stakes."
+  },
+  {
+    "title": "Deadpool & Wolverine",
+    "year": 2024,
+    "genre": "Action / Comedy",
+    "description": "Two unlikely heroes team up for a chaotic mission, blending irreverent humor with explosive action."
+  },
+  {
+    "title": "Longlegs",
+    "year": 2024,
+    "genre": "Horror / Thriller",
+    "description": "An FBI agent investigates a disturbing series of crimes, uncovering a sinister presence that defies explanation."
+  },
+  {
+    "title": "Alien: Romulus",
+    "year": 2024,
+    "genre": "Sci‑Fi / Horror",
+    "description": "A group of young explorers encounters a deadly extraterrestrial threat, fighting for survival in deep space."
+  },
+  {
+    "title": "Joker: Folie à Deux",
+    "year": 2024,
+    "genre": "Drama / Musical",
+    "description": "A troubled man forms a volatile bond with a mysterious woman, exploring madness, identity, and shared delusion."
+  },
+  {
+    "title": "Gladiator II",
+    "year": 2024,
+    "genre": "Action / Drama",
+    "description": "A new warrior rises amid political turmoil, confronting legacy, vengeance, and the brutality of empire."
+  },
+  {
+    "title": "Mufasa: The Lion King",
+    "year": 2024,
+    "genre": "Animation / Adventure",
+    "description": "The origin story of a beloved king unfolds through hardship, courage, and the bonds that shape destiny."
+  },
+  {
+    "title": "Wicked: Part One",
+    "year": 2024,
+    "genre": "Fantasy / Musical",
+    "description": "Two young women form an unlikely friendship in a magical land, confronting power, prejudice, and destiny."
+  },
+  {
+    "title": "The Substance",
+    "year": 2024,
+    "genre": "Horror / Drama",
+    "description": "A mysterious product promises transformation, leading to disturbing consequences as identity fractures."
+  },
+  {
+    "title": "The Apprentice",
+    "year": 2024,
+    "genre": "Drama / Biography",
+    "description": "A young man rises through the business world, confronting ambition, mentorship, and moral compromise."
+  },
+
+  {
+    "title": "The Wild Robot",
+    "year": 2024,
+    "genre": "Animation / Adventure",
+    "description": "A robot stranded on an island learns to survive and connect with wildlife, discovering purpose and belonging."
+  },
+  {
+    "title": "The Brutalist",
+    "year": 2024,
+    "genre": "Drama",
+    "description": "An architect’s life unfolds through ambition, artistry, and the emotional cost of creation."
+  },
+  {
+    "title": "The Room Next Door",
+    "year": 2024,
+    "genre": "Drama / Thriller",
+    "description": "A journalist uncovers hidden truths while confronting personal trauma and political tension."
+  },
+  {
+    "title": "Megalopolis",
+    "year": 2024,
+    "genre": "Sci‑Fi / Drama",
+    "description": "A visionary architect attempts to rebuild a city, confronting power struggles, ambition, and societal upheaval."
+  },
+  {
+    "title": "The Great Machine",
+    "year": 2024,
+    "genre": "Sci‑Fi / Thriller",
+    "description": "A scientist uncovers a dangerous secret within a powerful AI system, confronting ethics and control."
+  },
+  {
+    "title": "The Last Voyage of the Demeter",
+    "year": 2023,
+    "genre": "Horror / Thriller",
+    "description": "A ship’s crew faces terror as a mysterious passenger unleashes horror during a perilous sea journey."
+  },
+  {
+    "title": "Talk to Me",
+    "year": 2023,
+    "genre": "Horror / Thriller",
+    "description": "Teenagers experiment with a supernatural ritual, unleashing consequences that blur the line between life and death."
+  },
+  {
+    "title": "Beau Is Afraid",
+    "year": 2023,
+    "genre": "Drama / Horror",
+    "description": "A man embarks on a surreal journey through fear, guilt, and bizarre encounters that challenge reality."
+  },
+  {
+    "title": "The Creator",
+    "year": 2023,
+    "genre": "Sci‑Fi / Action",
+    "description": "A soldier confronts moral dilemmas in a future where humans and AI wage a devastating war."
+  },
+  {
+    "title": "The Killer",
+    "year": 2023,
+    "genre": "Thriller / Crime",
+    "description": "A meticulous assassin faces unexpected complications that challenge his discipline and resolve."
+  },
+
+  {
+    "title": "The Zone of Interest",
+    "year": 2023,
+    "genre": "Drama / Historical",
+    "description": "A family lives beside a concentration camp, revealing chilling contrasts between domestic life and systemic horror."
+  },
+  {
+    "title": "The Holdovers",
+    "year": 2023,
+    "genre": "Drama / Comedy",
+    "description": "A strict teacher, a troubled student, and a grieving cook form an unlikely bond during a lonely holiday break."
+  },
+  {
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genre": "Drama / Historical",
+    "description": "A physicist grapples with ambition, morality, and consequence as he leads a project that will change the world forever."
+  },
+  {
+    "title": "Past Lives",
+    "year": 2023,
+    "genre": "Drama / Romance",
+    "description": "Childhood friends reunite years later, exploring fate, longing, and the paths not taken."
+  },
+  {
+    "title": "Killers of the Flower Moon",
+    "year": 2023,
+    "genre": "Drama / Crime",
+    "description": "A series of murders in an Indigenous community exposes greed, corruption, and the dark side of power."
+  },
+  {
+    "title": "Poor Things",
+    "year": 2023,
+    "genre": "Fantasy / Drama",
+    "description": "A woman brought back to life embarks on a surreal journey of self‑discovery, challenging societal norms and expectations."
+  },
+  {
+    "title": "Spider‑Man: Across the Spider‑Verse",
+    "year": 2023,
+    "genre": "Animation / Action",
+    "description": "A young hero travels across multiverses, confronting new threats and discovering the weight of his own choices."
+  },
+  {
+    "title": "The Batman",
+    "year": 2022,
+    "genre": "Action / Crime",
+    "description": "A young vigilante investigates a series of cryptic crimes, uncovering corruption that runs deep within his city."
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "genre": "Sci‑Fi / Comedy",
+    "description": "A woman discovers she can access alternate versions of herself, embarking on a chaotic journey of identity and connection."
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "genre": "Action / Drama",
+    "description": "A veteran pilot returns to train a new generation, confronting legacy, danger, and the limits of his own past."
+  },
+
+  {
+    "title": "The Banshees of Inisherin",
+    "year": 2022,
+    "genre": "Drama / Comedy",
+    "description": "Two lifelong friends face an unexpected rift, revealing loneliness, stubbornness, and the complexities of human connection."
+  },
+  {
+    "title": "RRR",
+    "year": 2022,
+    "genre": "Action / Drama",
+    "description": "Two revolutionaries forge a powerful bond as they fight oppression, blending mythic heroism with explosive spectacle."
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "year": 2022,
+    "genre": "War / Drama",
+    "description": "A young soldier experiences the brutal realities of war, confronting fear, loss, and the futility of conflict."
+  },
+  {
+    "title": "Decision to Leave",
+    "year": 2022,
+    "genre": "Thriller / Romance",
+    "description": "A detective becomes entangled with a mysterious widow, blurring the line between duty and desire."
+  },
+  {
+    "title": "Nope",
+    "year": 2022,
+    "genre": "Sci‑Fi / Horror",
+    "description": "Siblings uncover a strange presence in the sky, confronting spectacle, fear, and the cost of chasing fame."
+  },
+  {
+    "title": "The Whale",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A reclusive teacher attempts to reconnect with his estranged daughter, confronting guilt, grief, and hope."
+  },
+  {
+    "title": "Guillermo del Toro’s Pinocchio",
+    "year": 2022,
+    "genre": "Animation / Fantasy",
+    "description": "A wooden boy embarks on a journey of identity and love in a darkly reimagined tale of creation and humanity."
+  },
+  {
+    "title": "Tár",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A renowned conductor faces mounting pressure as personal and professional conflicts threaten her carefully constructed world."
+  },
+  {
+    "title": "Aftersun",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A woman reflects on a childhood vacation with her father, uncovering emotional truths through fragmented memories."
+  },
+  {
+    "title": "The Fabelmans",
+    "year": 2022,
+    "genre": "Drama",
+    "description": "A young filmmaker discovers his passion while navigating family conflict, creativity, and self‑expression."
+  }
+]
+
