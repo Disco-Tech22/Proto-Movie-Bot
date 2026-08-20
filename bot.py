@@ -1,8 +1,10 @@
 import os
 import random
 import json
+import webserver
 from datetime import time, timezone
 from threading import Thread
+
 
 from flask import Flask
 import discord
@@ -255,5 +257,7 @@ if __name__ == "__main__":
 
     # Start Discord bot
     print("Starting Discord bot...")
+
+    webserver.keep_alive
 
     bot.run(TOKEN)
