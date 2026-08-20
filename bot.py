@@ -1,7 +1,7 @@
 import os
 import random
 import json
-from datetime import time
+from datetime import datetime, time
 from zoneinfo import ZoneInfo
 from threading import Thread
 
@@ -92,15 +92,16 @@ if not movies:
 # SETTINGS
 # ============================================================
 
-# Discord channel where the daily movie will be posted
 DAILY_CHANNEL_ID = 1538316181470187550
 
-# 17:12 UK time every day
-# Automatically handles GMT/BST.
+# UK timezone
+UK_TIMEZONE = ZoneInfo("Europe/London")
+
+# Daily movie post time: 17:28 UK time
 DAILY_MOVIE_TIME = time(
     hour=17,
-    minute=12,
-    tzinfo=ZoneInfo("Europe/London")
+    minute=28,
+    tzinfo=UK_TIMEZONE
 )
 
 
@@ -141,21 +142,99 @@ def create_movie_embed():
 
 
 # ============================================================
-# DISCORD EVENTS
+# GET DAILY CHANNEL
+# ============================================================
+
+async def get_daily_channel():
+
+    print(f"Looking for Discord channel: {DAILY_CHANNEL_ID}")
+
+    channel = bot.get_channel(DAILY_CHANNEL_ID)
+
+    if channel is not None:
+        print(
+            f"Channel found in cache: "
+            f"#{getattr(channel, 'name', 'unknown')}"
+        )
+        return channel
+
+    print("Channel not in cache. Fetching from Discord...")
+
+    try:
+        channel = await bot.fetch_channel(DAILY_CHANNEL_ID)
+
+        print(
+            f"Channel successfully fetched: "
+            f"#{getattr(channel, 'name', 'unknown')}"
+        )
+
+        return channel
+
+    except discord.NotFound:
+        print(
+            "ERROR: Discord says this channel does not exist."
+        )
+
+    except discord.Forbidden:
+        print(
+            "ERROR: Discord denied access to this channel."
+        )
+
+    except discord.HTTPException as e:
+        print(
+            f"ERROR fetching channel from Discord: {e}"
+        )
+
+    return None
+
+
+# ============================================================
+# DISCORD READY
 # ============================================================
 
 @bot.event
 async def on_ready():
+
+    print("")
     print("========================================")
+    print("DISCORD BOT CONNECTED")
+    print("========================================")
+
     print(f"Logged in as: {bot.user}")
     print(f"Bot ID: {bot.user.id}")
     print(f"Movies loaded: {len(movies)}")
-    print(f"Daily movie time: {DAILY_MOVIE_TIME}")
-    print("========================================")
 
+    now = datetime.now(UK_TIMEZONE)
+
+    print(f"Current UK time: {now}")
+    print(f"Scheduled time: {DAILY_MOVIE_TIME}")
+
+    # Check target channel
+    channel = await get_daily_channel()
+
+    if channel:
+        print(
+            f"Target channel confirmed: "
+            f"#{getattr(channel, 'name', 'unknown')}"
+        )
+    else:
+        print(
+            "WARNING: Target channel could not be accessed."
+        )
+
+    # Start scheduler
     if not daily_movie.is_running():
+
         daily_movie.start()
-        print("Daily movie task started.")
+
+        print("Daily movie scheduler STARTED.")
+
+    else:
+
+        print("Daily movie scheduler was already running.")
+
+    print("========================================")
+    print("")
 
 
 # ============================================================
@@ -164,58 +243,83 @@ async def on_ready():
 
 @tasks.loop(time=DAILY_MOVIE_TIME)
 async def daily_movie():
-    """Posts a random movie every day at 17:12 UK time."""
+    """Posts a random movie every day at 17:28 UK time."""
 
-    print("Daily movie task triggered.")
+    now = datetime.now(UK_TIMEZONE)
 
-    channel = bot.get_channel(DAILY_CHANNEL_ID)
+    print("")
+    print("========================================")
+    print("DAILY MOVIE TASK TRIGGERED")
+    print(f"UK time: {now}")
+    print("========================================")
 
-    # If the channel isn't cached, fetch it from Discord
+    channel = await get_daily_channel()
+
     if channel is None:
-        try:
-            channel = await bot.fetch_channel(DAILY_CHANNEL_ID)
 
-        except discord.NotFound:
-            print(
-                f"ERROR: Discord channel "
-                f"{DAILY_CHANNEL_ID} does not exist."
-            )
-            return
+        print(
+            "ERROR: Cannot post because the Discord "
+            "channel could not be accessed."
+        )
 
-        except discord.Forbidden:
-            print(
-                f"ERROR: Bot does not have permission "
-                f"to access channel {DAILY_CHANNEL_ID}."
-            )
-            return
-
-        except discord.HTTPException as e:
-            print(f"ERROR fetching Discord channel: {e}")
-            return
+        return
 
     try:
+
         embed = create_movie_embed()
 
         await channel.send(embed=embed)
 
-        print("Daily movie successfully posted.")
+        print("SUCCESS: Daily movie posted.")
 
     except discord.Forbidden:
+
         print(
-            "ERROR: Discord rejected the message. "
-            "Make sure the bot has permission to send messages "
-            "and embed links in the channel."
+            "ERROR: Discord rejected the message."
         )
 
+        print(
+            "Check that the bot has these permissions "
+            "in the target channel:"
+        )
+
+        print("- View Channel")
+        print("- Send Messages")
+        print("- Embed Links")
+
     except discord.HTTPException as e:
-        print(f"ERROR: Discord API error: {e}")
+
+        print(
+            f"ERROR: Discord API error: {e}"
+        )
 
     except Exception as e:
-        print(f"ERROR sending daily movie: {e}")
+
+        print(
+            f"ERROR sending daily movie: {e}"
+        )
 
 
 # ============================================================
-# MANUAL COMMAND
+# SCHEDULER ERROR
+# ============================================================
+
+@daily_movie.error
+async def daily_movie_error(error):
+
+    print("")
+    print("========================================")
+    print("DAILY MOVIE SCHEDULER ERROR")
+    print("========================================")
+
+    print(repr(error))
+
+    print("========================================")
+    print("")
+
+
+# ============================================================
+# MANUAL MOVIE COMMAND
 # ============================================================
 
 @bot.command()
@@ -223,21 +327,78 @@ async def movie(ctx):
     """Posts a random movie manually using !movie."""
 
     try:
+
         embed = create_movie_embed()
 
         await ctx.send(embed=embed)
 
     except discord.Forbidden:
+
         await ctx.send(
             "❌ I don't have permission to send messages or embeds here."
         )
 
     except Exception as e:
-        print(f"ERROR with !movie command: {e}")
+
+        print(
+            f"ERROR with !movie command: {e}"
+        )
 
 
 # ============================================================
-# ERROR HANDLING
+# TEST TARGET CHANNEL
+# ============================================================
+
+@bot.command()
+@commands.is_owner()
+async def testmovie(ctx):
+    """Test posting to the configured daily movie channel."""
+
+    print("TESTMOVIE command triggered.")
+
+    channel = await get_daily_channel()
+
+    if channel is None:
+
+        await ctx.send(
+            "❌ I cannot access the configured daily movie channel."
+        )
+
+        return
+
+    try:
+
+        embed = create_movie_embed()
+
+        await channel.send(embed=embed)
+
+        await ctx.send(
+            "✅ Test movie successfully posted to the daily channel."
+        )
+
+        print(
+            "SUCCESS: testmovie posted to target channel."
+        )
+
+    except discord.Forbidden:
+
+        await ctx.send(
+            "❌ Discord denied permission to post in the target channel."
+        )
+
+    except discord.HTTPException as e:
+
+        await ctx.send(
+            f"❌ Discord API error: {e}"
+        )
+
+        print(
+            f"Discord API error: {e}"
+        )
+
+
+# ============================================================
+# COMMAND ERROR HANDLING
 # ============================================================
 
 @bot.event
@@ -246,13 +407,25 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         return
 
+    if isinstance(error, commands.NotOwner):
+
+        await ctx.send(
+            "❌ Only the bot owner can use that command."
+        )
+
+        return
+
     if isinstance(error, commands.MissingRequiredArgument):
+
         await ctx.send(
             "❌ You're missing a required argument."
         )
 
-    else:
-        print(f"Command error: {error}")
+        return
+
+    print(
+        f"Command error: {repr(error)}"
+    )
 
 
 # ============================================================
