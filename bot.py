@@ -22,7 +22,7 @@ with open("movies.json", "r", encoding="utf-8") as f:
     movies = json.load(f)
 
 # Channel where the bot should post daily
-DAILY_CHANNEL_ID = 1539941178672291842
+DAILY_CHANNEL_ID = 1538316181470187550
 
 # Daily posting time: 9:00 AM GMT
 GMT = ZoneInfo("Etc/GMT")
