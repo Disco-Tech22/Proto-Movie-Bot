@@ -3,15 +3,36 @@ import random
 import json
 from datetime import time
 from zoneinfo import ZoneInfo
+from threading import Thread
 
+from flask import Flask
 import discord
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 
+# Load environment variables
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
+if not TOKEN:
+    raise RuntimeError("DISCORD_TOKEN environment variable is missing")
+
+# Flask web server for Render
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return "Discord bot is running!"
+
+
+def run_web():
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
+
+
+# Discord bot setup
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -53,8 +74,8 @@ async def daily_movie():
         description=movie["description"]
     )
 
-    embed.add_field(name="📅 Year", value=movie["year"])
-    embed.add_field(name="🎭 Genre", value=movie["genre"])
+    embed.add_field(name="📅 Year", value=str(movie["year"]))
+    embed.add_field(name="🎭 Genre", value=str(movie["genre"]))
     embed.set_footer(text="🍿 The Usher's Movie of the Day")
 
     await channel.send(embed=embed)
@@ -62,7 +83,7 @@ async def daily_movie():
 
 @bot.command()
 async def movie(ctx):
-    """Manual command still works."""
+    """Posts a random movie manually."""
     movie = random.choice(movies)
 
     embed = discord.Embed(
@@ -70,11 +91,16 @@ async def movie(ctx):
         description=movie["description"]
     )
 
-    embed.add_field(name="📅 Year", value=movie["year"])
-    embed.add_field(name="🎭 Genre", value=movie["genre"])
+    embed.add_field(name="📅 Year", value=str(movie["year"]))
+    embed.add_field(name="🎭 Genre", value=str(movie["genre"]))
     embed.set_footer(text="🍿 The Usher's Movie of the Day")
 
     await ctx.send(embed=embed)
 
 
-bot.run(TOKEN)
+if __name__ == "__main__":
+    # Start the web server in the background for Render
+    Thread(target=run_web, daemon=True).start()
+
+    # Start the Discord bot
+    bot.run(TOKEN)
