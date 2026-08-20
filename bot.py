@@ -26,7 +26,7 @@ DAILY_CHANNEL_ID = 1538316181470187550
 
 # Daily posting time: 9:00 AM GMT
 GMT = ZoneInfo("Etc/GMT")
-DAILY_MOVIE_TIME = time(hour=9, minute=0, tzinfo=GMT)
+DAILY_MOVIE_TIME = time(hour=15, minute=15, tzinfo=GMT)
 
 
 @bot.event
