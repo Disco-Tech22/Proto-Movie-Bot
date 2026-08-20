@@ -1,6 +1,8 @@
 import os
 import random
 import json
+from datetime import time
+from zoneinfo import ZoneInfo
 
 import discord
 from discord.ext import commands, tasks
@@ -15,24 +17,31 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# Load your 1000‑movie JSON file
+# Load your 1000-movie JSON file
 with open("movies.json", "r", encoding="utf-8") as f:
     movies = json.load(f)
 
-# ⭐ Set this to the channel where the bot should post daily
-DAILY_CHANNEL_ID = 1539941178672291842  # ← replace with your channel ID
+# Channel where the bot should post daily
+DAILY_CHANNEL_ID = 1539941178672291842
+
+# Daily posting time: 9:00 AM GMT
+GMT = ZoneInfo("Etc/GMT")
+DAILY_MOVIE_TIME = time(hour=9, minute=0, tzinfo=GMT)
 
 
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}")
-    daily_movie.start()  # start the daily loop when bot is ready
+
+    if not daily_movie.is_running():
+        daily_movie.start()
 
 
-@tasks.loop(hours=24)
+@tasks.loop(time=DAILY_MOVIE_TIME)
 async def daily_movie():
-    """Sends a random movie once every 24 hours."""
+    """Sends a random movie every day at 9:00 AM GMT."""
     channel = bot.get_channel(DAILY_CHANNEL_ID)
+
     if channel is None:
         print("Daily channel not found. Check the ID.")
         return
