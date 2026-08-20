@@ -96,7 +96,7 @@ UK_TIMEZONE = ZoneInfo("Europe/London")
 # Daily movie time: 17:28 UK time
 DAILY_MOVIE_TIME = time(
     hour=17,
-    minute=28,
+    minute=50,
     tzinfo=UK_TIMEZONE
 )
 
