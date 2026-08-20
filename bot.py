@@ -1,10 +1,9 @@
 import os
 import random
 import json
-import webserver
-from datetime import time, timezone
+from datetime import time
+from zoneinfo import ZoneInfo
 from threading import Thread
-
 
 from flask import Flask
 import discord
@@ -78,6 +77,7 @@ bot = commands.Bot(
 try:
     with open("movies.json", "r", encoding="utf-8") as f:
         movies = json.load(f)
+
 except FileNotFoundError:
     raise RuntimeError(
         "movies.json was not found. "
@@ -95,14 +95,12 @@ if not movies:
 # Discord channel where the daily movie will be posted
 DAILY_CHANNEL_ID = 1538316181470187550
 
-# 09:00 GMT every day
-#
-# UTC is equivalent to GMT for this purpose.
-# Using timezone.utc avoids the ZoneInfo/tzdata problem.
+# 17:12 UK time every day
+# Automatically handles GMT/BST.
 DAILY_MOVIE_TIME = time(
-    hour=16,
-    minute=0,
-    tzinfo=timezone.utc
+    hour=17,
+    minute=12,
+    tzinfo=ZoneInfo("Europe/London")
 )
 
 
@@ -152,6 +150,7 @@ async def on_ready():
     print(f"Logged in as: {bot.user}")
     print(f"Bot ID: {bot.user.id}")
     print(f"Movies loaded: {len(movies)}")
+    print(f"Daily movie time: {DAILY_MOVIE_TIME}")
     print("========================================")
 
     if not daily_movie.is_running():
@@ -165,18 +164,34 @@ async def on_ready():
 
 @tasks.loop(time=DAILY_MOVIE_TIME)
 async def daily_movie():
-    """Posts a random movie every day at 09:00 GMT."""
+    """Posts a random movie every day at 17:12 UK time."""
 
     print("Daily movie task triggered.")
 
     channel = bot.get_channel(DAILY_CHANNEL_ID)
 
+    # If the channel isn't cached, fetch it from Discord
     if channel is None:
-        print(
-            f"ERROR: Could not find Discord channel "
-            f"{DAILY_CHANNEL_ID}"
-        )
-        return
+        try:
+            channel = await bot.fetch_channel(DAILY_CHANNEL_ID)
+
+        except discord.NotFound:
+            print(
+                f"ERROR: Discord channel "
+                f"{DAILY_CHANNEL_ID} does not exist."
+            )
+            return
+
+        except discord.Forbidden:
+            print(
+                f"ERROR: Bot does not have permission "
+                f"to access channel {DAILY_CHANNEL_ID}."
+            )
+            return
+
+        except discord.HTTPException as e:
+            print(f"ERROR fetching Discord channel: {e}")
+            return
 
     try:
         embed = create_movie_embed()
@@ -232,7 +247,9 @@ async def on_command_error(ctx, error):
         return
 
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("❌ You're missing a required argument.")
+        await ctx.send(
+            "❌ You're missing a required argument."
+        )
 
     else:
         print(f"Command error: {error}")
@@ -257,7 +274,5 @@ if __name__ == "__main__":
 
     # Start Discord bot
     print("Starting Discord bot...")
-
-    webserver.keep_alive
 
     bot.run(TOKEN)
