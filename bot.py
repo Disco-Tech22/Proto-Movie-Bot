@@ -93,10 +93,10 @@ DAILY_CHANNEL_ID = 1538316181470187550
 # This automatically handles GMT and BST.
 UK_TIMEZONE = ZoneInfo("Europe/London")
 
-# Daily movie time: 17:28 UK time
+# Daily movie time:  UK time
 DAILY_MOVIE_TIME = time(
-    hour=17,
-    minute=50,
+    hour=9
+    minute=0,
     tzinfo=UK_TIMEZONE
 )
 
